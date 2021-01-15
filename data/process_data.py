@@ -68,6 +68,7 @@ def main():
         df = clean_data(df)
         
         print('Saving data...\n    DATABASE: {}'.format(database_filepath))
+        df.to_csv('test.csv')
         save_data(df, database_filepath)
         
         print('Cleaned data saved to database!')
